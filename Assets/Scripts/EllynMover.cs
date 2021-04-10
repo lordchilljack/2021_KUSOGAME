@@ -6,33 +6,35 @@ using UnityEngine;
 /// </summary>
 public class EllynMover : MonoBehaviour
 {
-    public Camera m_MainCamera;
+    public bool Enabled;
 
     private CharacterController controller;
 
-    void Start()
+    public void Awake()
     {
-        controller = m_MainCamera.GetComponent<CharacterController>();
+        controller = GetComponent<CharacterController>();
+
+        Camera.main.enabled = !Enabled;
     }
 
-    void Update()
+    public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.J))
         {
             controller.Move(new Vector3(0f, 0f, 1.0f));
         }
 
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.K))
         {
             controller.Move(new Vector3(.0f, 0f, -1.0f));
         }
 
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.H))
         {
             controller.Move(new Vector3(-1.0f, .0f));
         }
 
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.L))
         {
             controller.Move(new Vector3(1.0f, .0f));
         }
@@ -42,7 +44,7 @@ public class EllynMover : MonoBehaviour
             controller.Move(new Vector3(0f, 1.0f));
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.RightShift))
         {
             controller.Move(new Vector3(.0f, -1.0f));
         }
