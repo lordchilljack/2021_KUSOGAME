@@ -13,7 +13,13 @@ MonoBehaviour:
   m_Name: PlayMakerGlobals
   m_EditorClassIdentifier: 
   variables:
-    floatVariables: []
+    floatVariables:
+    - useVariable: 1
+      name: "\u7B49\u5F85\u9593\u9694"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0.1
     intVariables: []
     boolVariables: []
     stringVariables: []
@@ -30,6 +36,8 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 
+    variableCategoryIDs: 00000000000000000000000000000000
   events:
   - speed up
+  - "\u52A0\u901F"
+  - "\u5F15\u64CE"
