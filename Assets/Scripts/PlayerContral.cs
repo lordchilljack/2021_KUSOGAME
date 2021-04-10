@@ -12,7 +12,6 @@ public class PlayerContral : MonoBehaviour
     public Transform Engine;
     public float SteerPower = 500f;
     public float Power = 5f;
-    public float MaxSpeed = 10f;
     public float Drag = 0.1f;
 
     protected Quaternion StartRotation;
@@ -37,8 +36,8 @@ public class PlayerContral : MonoBehaviour
         rigibody.AddForceAtPosition(steer * transform.right * SteerPower / 100f, Engine.position);
         
         if (Input.GetKey(KeyCode.W))
-            rigibody.AddForce(transform.up * Power / 100f, ForceMode.Impulse);
+            rigibody.AddForceAtPosition(transform.up * Power / 100f, Engine.position, ForceMode.Impulse);
         if (Input.GetKey(KeyCode.S))
-            rigibody.AddForce(-transform.up * Power / 100f, ForceMode.Impulse);
+            rigibody.AddForceAtPosition(-transform.up * Power / 100f, Engine.position, ForceMode.Impulse);
     }
 }
