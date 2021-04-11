@@ -15,7 +15,31 @@ MonoBehaviour:
   variables:
     floatVariables:
     - useVariable: 1
-      name: ship speed
+      name: "\u7B49\u5F85\u9593\u9694"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0.1
+    - useVariable: 1
+      name: "\u7576\u524D\u6A94"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: "\u7576\u524D\u8235"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: Amp
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: "\u8ECA\u9418\u6A94\u4F4D"
       tooltip: 
       showInInspector: 0
       networkSync: 0
@@ -36,8 +60,13 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 000000000000000000000000
+    variableCategoryIDs: 000000000000000000000000000000000000000000000000000000000000000000000000
   events:
   - speed up
   - "\u52A0\u901F"
   - "\u5F15\u64CE"
+  - "\u6309\u4E0B\u4E86\u958B\u59CB\u904A\u73A9"
+  - showthebutton
+  - NewGameGetclicked
+  - NewGameGetclick
+  - NewGameClicked
