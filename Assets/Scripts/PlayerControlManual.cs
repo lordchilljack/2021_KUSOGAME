@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerControlManual : MonoBehaviour
 {
@@ -7,6 +8,14 @@ public class PlayerControlManual : MonoBehaviour
     public float SteerPower = 5.0f;
     public float Power = 5.0f;
 
+    public void Update()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Debug.Log("LoadScene0");
+            SceneManager.LoadScene("Title");
+        }
+    }
     public void FixedUpdate()
     {
         var steer = 0;
@@ -32,5 +41,7 @@ public class PlayerControlManual : MonoBehaviour
         {
             Rigibody.AddForceAtPosition(-transform.up * Power / 100.0f, Engine.position, ForceMode.Impulse);
         }
+
+
     }
 }

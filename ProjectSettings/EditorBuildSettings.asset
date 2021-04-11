@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainGame.unity
+    path: Assets/Scenes/Title.unity
+    guid: 60722785a9e0a8e4d80df28a0ca91dd5
+  - enabled: 1
+    path: Assets/Scenes/GunpowPlayground.unity
+    guid: f65c4ec83562d0948bcdecffe642c46d
+  - enabled: 1
+    path: Assets/Scenes/RedBloodSeaMode.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/EllynPlayground.unity
+    guid: 74461a5355a96bf43ba8255e12ca6a05
   m_configObjects: {}

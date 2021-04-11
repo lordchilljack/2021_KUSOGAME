@@ -20,6 +20,42 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: 0.1
+    - useVariable: 1
+      name: "\u7576\u524D\u6A94"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: "\u7576\u524D\u8235"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: Amp
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: "\u8ECA\u9418\u6A94\u4F4D"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: "\u76EE\u6A19\u8235"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: "\u65B9\u5411\u7BAD\u982D"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
     intVariables: []
     boolVariables: []
     stringVariables: []
@@ -36,8 +72,15 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 00000000000000000000000000000000
+    variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   events:
   - speed up
-  - "\u52A0\u901F"
   - "\u5F15\u64CE"
+  - "\u6309\u4E0B\u4E86\u958B\u59CB\u904A\u73A9"
+  - showthebutton
+  - NewGameGetclicked
+  - NewGameGetclick
+  - NewGameClicked
+  - "\u53F3\u6EFF\u8235"
+  - "\u52A0\u901F"
+  - "\u5DE6\u6EFF\u8235"
